@@ -1,0 +1,31 @@
+Project
+	Backend
+		config
+			jwt.js --> genrateToken , validateToken
+			db.js  --> mongoose connection
+		routes
+			auth.js  -->user
+			adminAuth.js  -->admin
+			products.js --> add, delete , get
+		controllers
+			auth , adminauth , product routes logic .
+		models
+			user schema(name,email,password,mobile,role(user,admin) --> user)
+			product schema (productname,productprice,product description , productImage)
+		middleware 
+			token authenticate
+			admin/user authenticate
+		index.js 
+			all the above mention files will be connected 
+			urlencoded
+
+	Client
+		App.jsx -- routes
+		Home
+		Login
+		Register
+		Products
+		Navigation
+		Cart
+		Payment
+		Orders
